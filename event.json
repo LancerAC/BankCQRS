@@ -1,0 +1,52 @@
+{
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "type": "int64",
+        "optional": false,
+        "field": "id"
+      },
+      {
+        "type": "string",
+        "optional": false,
+        "field": "dtype"
+      },
+      {
+        "type": "string",
+        "optional": true,
+        "field": "aggregate_id"
+      },
+      {
+        "type": "string",
+        "optional": false,
+        "field": "type"
+      },
+      {
+        "type": "int64",
+        "optional": false,
+        "name": "io.debezium.time.MicroTimestamp",
+        "version": 1,
+        "default": 0,
+        "field": "timestamp"
+      },
+      {
+        "type": "string",
+        "optional": true,
+        "name": "io.debezium.data.Json",
+        "version": 1,
+        "field": "payload"
+      }
+    ],
+    "optional": false,
+    "name": "pg-replica.public.events.Value"
+  },
+  "payload": {
+    "id": 1,
+    "dtype": "ClientCreateEvent",
+    "aggregate_id": null,
+    "type": "CLIENT_CREATE",
+    "timestamp": 1721443830824927,
+    "payload": "{\"id\": null, \"name\": \"Ilya\", \"cards\": null, \"account\": null, \"password\": \"$2a$10$GDiB1Z4iYP5rRGuOSgh9yufJvR/tp5iH/UYM2LLcbuQkaj1xJ64wK\", \"username\": \"ilya@gmail.com\"}"
+  }
+}
